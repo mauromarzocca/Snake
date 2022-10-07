@@ -39,6 +39,7 @@ window.onload = () => {
     })
 
     foodPlace();
+
     setInterval(update, 1000/10);
 }
 
@@ -48,7 +49,7 @@ function update() {
     if(gameOver) {
         createText('Game Over', board.width / 2, board.height / 2 - 25, 'center', 50);
 
-        createText('Score: ${score}', board.width / 2, board.height / 2 + 25, 'center');
+        createText('Score : ${score}', board.width / 2, board.height / 2 + 25, 'center');
 
         createText('Click to Start Again', (cols * blockSize) / 2, board.height - 50, 'center');
 
@@ -69,7 +70,7 @@ function update() {
         foodPlace()
     }
 
-    for(let i = tail.length; i > 0; i--) {
+    for(let i = tail.length - 1; i > 0; i--) {
         tail[i] = tail[i - 1];
     }
 
