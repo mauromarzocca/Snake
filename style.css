@@ -14,6 +14,12 @@ h1 {
     margin-bottom: 2.5rem;
 }
 
+h3 {
+    color: lime;
+    margin-bottom: 2.5rem;
+}
+
+
 canvas {
     border: 3px solid lime;
 }
